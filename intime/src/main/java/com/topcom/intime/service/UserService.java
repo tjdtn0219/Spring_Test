@@ -28,7 +28,7 @@ public class UserService {
 		User user = userRepository.findById(id)
 				.orElseThrow(()->{
 					return new IllegalArgumentException("유저 찾기 실패");
-				})
+				});
 		user.setUsername(requestUser.getUsername());
 	}
 }
