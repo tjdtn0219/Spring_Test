@@ -8,6 +8,6 @@ public class TestController {
 
 	@GetMapping("/test/test1")
 	public String test() {
-		return "<h1>web hook test 2222</h1>";
+		return "<h1>web hook test 22</h1>";
 	}
 }
