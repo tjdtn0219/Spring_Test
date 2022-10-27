@@ -25,6 +25,9 @@ public class HttpTestController {
 	
 	@GetMapping("/http/get")
 	public User getTest(User user) {
+		System.out.println("=====GET USER======");
+		System.out.println(user.getUsername());
+		System.out.println("==================");
 		User finded_user = userService.findUser(user.getUsername());
 		return finded_user;
 	}
