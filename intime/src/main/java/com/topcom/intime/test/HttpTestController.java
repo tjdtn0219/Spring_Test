@@ -34,7 +34,11 @@ public class HttpTestController {
 
 	@PostMapping("/http/post")
 	public String postTest(User user) {
-		
+		System.out.println("=====POST USER======");
+		System.out.println(user.getUsername());
+		System.out.println(user.getPassword());
+		System.out.println(user.getEmail());
+		System.out.println("==================");
 		userRepository.save(user);
 		return "post요청";
 	}
